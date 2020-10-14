@@ -1,0 +1,177 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+nav {
+  width: 100%;
+  height: 45px;
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: black;
+}
+
+main {
+  width: 100%;
+  height: 60vh;
+  padding: 30px;
+}
+
+.main-header-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-img img {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  height: 400px;
+}
+
+.container {
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.left-section {
+  float: left;
+  width: 70%;
+}
+
+.left-section article {
+  margin: 50px;
+}
+
+.article-img-container {
+  width: 30%;
+  height: 200px;
+  float: left;
+}
+
+.article-text-container {
+  width: 70%;
+  height: 200px;
+  float: right;
+  text-align: justify;
+  padding-left: 15px;
+}
+
+.right-section {
+  float: right;
+  width: 30%;
+  background-color: mintcream;
+  border: 1px solid burlywood;
+  border-radius: 10px;
+}
+
+.right-img {
+  width: 250px;
+  text-align: center;
+  margin: 30px auto;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: darkslategray;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+}
